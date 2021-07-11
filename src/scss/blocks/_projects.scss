@@ -1,0 +1,18 @@
+.projects {
+    padding: 100px 0 140px;
+    overflow-X: hidden;
+
+    &__header {
+        margin-bottom: 91px;
+        color: $text-dark-blue;
+    }
+
+    &__project0 {
+        color: $light-blue;
+        margin-bottom: 140px;
+    }
+
+    &__project1 {
+        color: $local-purple;
+    }
+}

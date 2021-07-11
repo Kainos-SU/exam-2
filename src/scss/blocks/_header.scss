@@ -1,0 +1,148 @@
+.header {
+    position: relative;
+    color: white;
+
+    &__logo {
+        color: inherit;
+    }
+
+    &__home-link {
+        color: inherit;
+    }
+
+    &__logo-icon {
+        fill: currentColor;
+    }
+
+    &__title {
+        position: absolute;
+        top: 53px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    
+    &__header {
+        display: none;
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        flex: 0 1 596px;
+        padding: 0 8px;
+    }
+    
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__link {
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            top: 150%;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.25s;
+        }
+
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+
+    &__anchor {
+        text-transform: uppercase;
+        vertical-align: middle;
+        font-family: "GothamBook";
+        font-size: 14px;
+        color: inherit;
+
+    }
+
+    &__link-indicator {
+        display: inline-block;
+        width: 0.85em;
+        height: 0.85em;
+        margin-right: 14px;
+        border: 1px solid currentColor;
+        background-color: transparent;
+        border-radius: 50%;
+        transition: background-color 0.25s;
+    }
+
+    &__link:hover &__link-indicator, 
+    &__anchor:focus &__link-indicator,
+    &__anchor:focus-visible &__link-indicator {
+        background-color: currentColor      ;
+    }
+
+    &__socials {
+        flex: 0 1 160px;
+    }
+
+    &__slider {
+        margin: 0;
+    }
+
+    &__scrollDown {
+        position: absolute;
+        margin: auto;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+    }
+
+
+}
+
+.icon {
+
+    &:hover &__circle{
+        background-color: rgba(255,255,255, 0.35);
+    }
+
+    &__circle {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    &__arrow {
+        position: absolute;
+        margin: auto;
+        height: 8px;
+        width: 8px;
+        border-right: 1.5px solid white;
+        border-bottom: 1.5px solid white;
+
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}

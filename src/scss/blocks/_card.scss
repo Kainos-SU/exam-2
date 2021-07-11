@@ -1,0 +1,85 @@
+.card {
+    // width: 370px !important;
+    margin: 15px;
+    background-color: #fff;
+    
+
+    &__image {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 25px;
+
+        &::before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 240 / 370 * 100%;
+        }
+    }
+
+    &__pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__description {
+        padding: 0 18px 20px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-family: "GothamBold";
+        font-size: 22 / 16 * 1rem;
+        line-height: 1.5em;
+        color: $text-dark-blue;
+        margin-bottom: 5px;
+    }
+
+    &__text-description {
+        color: $text-darker-blue;
+        font-family: "Open Sans";
+        font-size: 18 / 16 * 1rem;
+        overflow: hidden;
+        line-height: 1.5em;
+        margin-bottom: 40px;
+    }
+
+    &__author-date {
+        display: flex;
+    }
+
+    &__avatar {
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    &__author-image {
+        width: 100%;
+    }
+
+    &__name-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: "GothamBook", sans-serif;
+    }
+
+    &__author-name {
+        text-transform: uppercase;
+        font-size: 18 / 16 * 1rem;
+        font-weight: 500;
+        margin-bottom: 13px;
+        color: $text-dark-blue;
+    }
+
+    &__date {
+        color: $light-blue;
+        font-size: 14 / 16 * 1rem;
+    }
+}

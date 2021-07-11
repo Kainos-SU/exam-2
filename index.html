@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monticello</title>
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <script src="js/jquery/jquery-3.6.0.js"></script>
+    <script src="js/jquery/jquery-migrate-1.4.1.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/Clamp.js-master/clamp.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    
+    <header class="header" id="about-us">
+       <div class="header__title">
+           <div class="container">
+               <div class="header__wrapper">
+                   <div class="header__logo">
+                       <h1 class="header__header">Monticello</h1>
+                        <a href="index.html" class="header__home-link">
+                            <svg class="header__logo-icon" xmlns="http://www.w3.org/2000/svg" width="241" height="54" viewBox="0 0 241 54">
+                                <use href="svg/Logo.svg#Logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                   <nav class="header__nav">
+                       <ul class="header__links">
+                           <li class="header__link">
+                               <a href="#about-us" class="header__anchor">
+                                   <span class="header__link-indicator"></span>about us
+                                </a>
+                            </li>
+                           <li class="header__link">
+                               <a href="#projects" class="header__anchor">
+                                    <span class="header__link-indicator"></span>projects
+                                </a>
+                            </li>
+                           <li class="header__link">
+                               <a href="#news" class="header__anchor">
+                                    <span class="header__link-indicator"></span>news
+                                </a>
+                            </li>
+                           <li class="header__link">
+                               <a href="#contacts" class="header__anchor">
+                                    <span class="header__link-indicator"></span>contact
+                                </a>
+                            </li>
+                       </ul>
+                   </nav>
+                   <nav class="header__socials">
+                       <ul class="header__social-list social">
+                           <li class="social__item social__item--facebook">
+                               <a href="https://www.facebook.com" class="social__link">
+                                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <use href="svg/sprite.svg#facebook"></use>
+                                    </svg>
+                               </a>
+                           </li>
+                           <li class="social__item social__item--twitter">
+                               <a href="https://twitter.com" class="social__link">
+                                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <use href="svg/sprite.svg#twitter"></use>
+                                    </svg>
+                               </a>
+                           </li>
+                           <li class="social__item social__item--instagram">
+                               <a href="https://www.instagram.com/" class="social__link">
+                                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <use href="svg/sprite.svg#instagram"></use>
+                                    </svg>
+                               </a>
+                           </li>
+                       </ul>
+                   </nav>
+               </div>
+            </div>
+        </div>
+        <div class="header__slider slider-upDown">
+            <div class="slider-upDown__slide" style="background-image: url('../img/header_background.jpg');">
+                <h2 class="slider-upDown__title">Simple & mordern</h2>
+                <p class="slider-upDown__description">We make the world's beautiful every day</p>
+            </div>
+            <div class="slider-upDown__slide" style="background-image: url('../img/header_background.jpg');">
+                <h2 class="slider-upDown__title">Вадим, будь-ласка глянь код</h2>
+                <p class="slider-upDown__description">У мене питання по БЕМ. Чи можна всередени іншого блоку вставляти елементи батьківського об'єкту, або комбінувати класси? Тому що, як по-моєму, форматування цього тексту відноситься більше до "header".</p>
+            </div>
+            <div class="slider-upDown__slide" style="background-image: url('../img/header_background.jpg');">
+                <h2 class="slider-upDown__title">Content</h2>
+                <p class="slider-upDown__description">Some content here!</p>
+            </div>
+            <div class="slider-upDown__slide" style="background-image: url('../img/header_background.jpg');">
+                <h2 class="slider-upDown__title">Lorem & ipsum</h2>
+                <p class="slider-upDown__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+            </div>
+            <div class="slider-upDown__slide" style="background-image: url('../img/header_background.jpg');">
+                <h2 class="slider-upDown__title">Lorem & ipsum</h2>
+                <p class="slider-upDown__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+            </div>
+        </div>
+        <div class="header__scrollDown">
+            <a href="#projects" class="header__scroll-anchor icon">
+                <span class=" icon__circle">
+                    <span class=" icon__arrow"></span>
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="projects" id="projects">
+            <div class="container">
+                <h3 class="projects__header title">what we do</h3>
+                <div class="projects__project0 project-card">
+                    <div class="project-card__picture">
+                        <picture class="project-card__img">
+                            <source media="(max-resolution: 1dppx)"
+                                srcset="./img/projects/trade_center.jpg">
+                            <source media="(max-resolution: 2dppx)"
+                                srcset="./img/projects/trade_center@2x.jpg">
+                            <source media="(max-resolution: 3dppx)"
+                                srcset="./img/projects/trade_center@3x.jpg">
+                            <img src="./img/projects/trade_center.jpg" alt="Trade Center">
+                        </picture>
+                    </div>
+                    <div class="project-card__description">
+                        <h5 class="project-card__subtitle">one world</h5>
+                        <h4 class="project-card__title">trade center</h4>
+                        <p class="project-card__text-description">
+                            Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+                            The truth is, our thoughts are very powerful.
+                        </p>
+                        <a href="#" class="project-card__btn btn">more details</a>
+                        <p class="project-card__adress">
+                            <svg class="project-card__location-icon" viewBox="0 0 384 512">
+                                <use href="./svg/sprite.svg#location"></use>
+                            </svg>
+                            New York City, United States - 1776 feet
+                        </p>
+                    </div>
+                </div>
+                <div class="projects__project1 project-card project-card--inverse">
+                    <div class="project-card__picture">
+                        <picture class="project-card__img">
+                            <source media="(max-resolution: 1dppx)"
+                                srcset="./img/projects/commerce_center.jpg">
+                            <source media="(max-resolution: 2dppx)"
+                                srcset="./img/projects/commerce_center@2x.jpg">
+                            <source media="(max-resolution: 3dppx)"
+                                srcset="./img/projects/commerce_center@3x.jpg">
+                            <img src="./img/projects/commerce_center.jpg" alt="Commerce centre">
+                        </picture>
+                    </div>
+                    <div class="project-card__description">
+                        <h5 class="project-card__subtitle">international</h5>
+                        <h4 class="project-card__title">commerce centre</h4>
+                        <p class="project-card__text-description">
+                            Successful businesses have many things in
+                            common, today we’ll look at the big ‘R’ of
+                            recognition and how a digital advertising network may help.
+                        </p>
+                        <a href="#" class="project-card__btn btn">more details</a>
+                        <p class="project-card__adress">
+                            <svg class="project-card__location-icon" viewBox="0 0 384 512">
+                                <use href="./svg/sprite.svg#location"></use>
+                            </svg>
+                            Hong Kong - 1588 Feet
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news" id="news">
+            <div class="container">
+                <h3 class="news__header title">latest news</h3>
+                <div class="news__slider horisontal-slider">
+                    <div class="horisontal-slider__slide card">
+                        <div class="card__image">
+                            <picture class="card__pic">
+                                <source media="(max-resolution: 1dppx)"
+                                    srcset="./img/news/building1.jpg">
+                                <source media="(max-resolution: 2dppx)"
+                                    srcset="./img/news/building1@2x.jpg">
+                                <source media="(max-resolution: 3dppx)"
+                                    srcset="./img/news/building1@3x.jpg">
+                                <img src="./img/news/building1.jpg" alt="Commerce centre">
+                            </picture>
+                        </div>
+                        <div class="card__description">
+                            <h4 class="card__title">See The Unmatched Beauty Of The Great</h4>
+                            <p class="card__text-description">
+                                Free directories: directories are perfect for
+                                customers that are... searching for a particular topic.
+                                What’s great about them is that you only have to post
+                                once and they are good for long periods of time.
+                                It saves a lot of your time when you don’t have to
+                                resubmit your information every week or every month.
+                                The bad news is most of your traffic won’t come from
+                                here. I still feel it is worth it to get your link out
+                                there. Just take one day and set it aside for posting
+                                to free directories. You won’t need to do it again for
+                                at least 6 months.
+                            </p>
+                            <div class="card__author-date">
+                                <div class="card__avatar"><img src="img/news/avatars/author1.jpg" alt="Author avatar" class="card__author-imgage"></div>
+                                <div class="card__name-date">
+                                    <p class="card__author-name">Isaac Dunn</p>
+                                    <p class="card__date">09 Feb 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horisontal-slider__slide card">
+                        <div class="card__image">
+                            <picture class="card__pic">
+                                <source media="(max-resolution: 1dppx)"
+                                    srcset="./img/news/building2.jpg">
+                                <source media="(max-resolution: 2dppx)"
+                                    srcset="./img/news/building2@2x.jpg">
+                                <source media="(max-resolution: 3dppx)"
+                                    srcset="./img/news/building2@3x.jpg">
+                                <img src="./img/news/building2.jpg" alt="Commerce centre">
+                            </picture>
+                        </div>
+                        <div class="card__description">
+                            <h4 class="card__title">Effective Advertising Pointers.</h4>
+                            <p class="card__text-description">
+                                Having a home based business is a wonderful asset to your life...
+                                The problem still stands, when it comes time to advertise your
+                                business for a cheap cost. I know you have looked for this answer
+                                everywhere; I am here to share a few simple yet creative ways, to
+                                advertise your new home business. A few suggestions would be, newspapers
+                                is the one source that many people go to, when they have just opened
+                                there business. You would need to research online, for newspapers that are
+                                in your area. Newspapers are a very simple yet effective tool to use to take
+                                your business from basic home based business to business galore. Having catchy
+                                phrases and pictures or photographs of your products should help spice it up.
+                                Knowing your audience is the key to businesses. There are also, radio stations
+                                you could call in, or even email too. If you are a communicator, you can try
+                                to get onto a radio station and just share your business. You would need to
+                                write an outline or some type of catchy jingle that will help you be different
+                                from the rest of the business. The creativity comes from within. Knowing your
+                                target and knowing what you provide is gold, will surely, make you stand out
+                                from the rest of the crowd. Did you know that creativity comes from the heart
+                                and soul in once you find the creative voice you will find all kinds of ways to
+                                advertise your home business without spending a fortune for a market rep when you
+                                can do it yourself saving yourself time and money where you can be spending it on
+                                something else.
+                            </p>
+                            <div class="card__author-date">
+                                <div class="card__avatar"><img src="img/news/avatars/author2.jpg" alt="Author avatar" class="card__author-imgage"></div>
+                                <div class="card__name-date">
+                                    <p class="card__author-name">Dominic freeman</p>
+                                    <p class="card__date">24 Apr 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horisontal-slider__slide card">
+                        <div class="card__image">
+                            <picture class="card__pic">
+                                <source media="(max-resolution: 1dppx)"
+                                    srcset="./img/news/building3.jpg">
+                                <source media="(max-resolution: 2dppx)"
+                                    srcset="./img/news/building3@2x.jpg">
+                                <source media="(max-resolution: 3dppx)"
+                                    srcset="./img/news/building3@3x.jpg">
+                                <img src="./img/news/building3.jpg" alt="Commerce centre">
+                            </picture>
+                        </div>
+                        <div class="card__description">
+                            <h4 class="card__title">Hypnotize Yourself Into The Ghost.</h4>
+                            <p class="card__text-description">
+                                There are many things that are important to catalog design....
+                                Your images must be sharp and appealing. Your text and even
+                                the font you use for the text is important. The cover page design
+                                and the design of your catalog’s product pages all play important
+                                roles in designing a catalog that will bring in new customers and sales.
+                                Ask your printer to provide you with samples or swatch booklets
+                                and a price list for printing your catalog on the various types
+                                of paper before you decide. You know what your budget is and paper
+                                is only one of the expenses you have to consider.
+                            </p>
+                            <div class="card__author-date">
+                                <div class="card__avatar"><img src="img/news/avatars/author3.jpg" alt="Author avatar" class="card__author-imgage"></div>
+                                <div class="card__name-date">
+                                    <p class="card__author-name">Alice Ward</p>
+                                    <p class="card__date">30 Dec 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horisontal-slider__slide card">
+                        <div class="card__image">
+                            <picture class="card__pic">
+                                <source media="(max-resolution: 1dppx)"
+                                    srcset="./img/news/building1.jpg">
+                                <source media="(max-resolution: 2dppx)"
+                                    srcset="./img/news/building1@2x.jpg">
+                                <source media="(max-resolution: 3dppx)"
+                                    srcset="./img/news/building1@3x.jpg">
+                                <img src="./img/news/building1.jpg" alt="Commerce centre">
+                            </picture>
+                        </div>
+                        <div class="card__description">
+                            <h4 class="card__title">See The Unmatched Beauty Of The Great</h4>
+                            <p class="card__text-description">
+                                Free directories: directories are perfect for
+                                customers that are... searching for a particular topic.
+                                What’s great about them is that you only have to post
+                                once and they are good for long periods of time.
+                                It saves a lot of your time when you don’t have to
+                                resubmit your information every week or every month.
+                                The bad news is most of your traffic won’t come from
+                                here. I still feel it is worth it to get your link out
+                                there. Just take one day and set it aside for posting
+                                to free directories. You won’t need to do it again for
+                                at least 6 months.
+                            </p>
+                            <div class="card__author-date">
+                                <div class="card__avatar"><img src="img/news/avatars/author1.jpg" alt="Author avatar" class="card__author-imgage"></div>
+                                <div class="card__name-date">
+                                    <p class="card__author-name">Isaac Dunn</p>
+                                    <p class="card__date">09 Feb 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horisontal-slider__slide card">
+                        <div class="card__image">
+                            <picture class="card__pic">
+                                <source media="(max-resolution: 1dppx)"
+                                    srcset="./img/news/building1.jpg">
+                                <source media="(max-resolution: 2dppx)"
+                                    srcset="./img/news/building1@2x.jpg">
+                                <source media="(max-resolution: 3dppx)"
+                                    srcset="./img/news/building1@3x.jpg">
+                                <img src="./img/news/building1.jpg" alt="Commerce centre">
+                            </picture>
+                        </div>
+                        <div class="card__description">
+                            <h4 class="card__title">See The Unmatched Beauty Of The Great</h4>
+                            <p class="card__text-description">
+                                Free directories: directories are perfect for
+                                customers that are... searching for a particular topic.
+                                What’s great about them is that you only have to post
+                                once and they are good for long periods of time.
+                                It saves a lot of your time when you don’t have to
+                                resubmit your information every week or every month.
+                                The bad news is most of your traffic won’t come from
+                                here. I still feel it is worth it to get your link out
+                                there. Just take one day and set it aside for posting
+                                to free directories. You won’t need to do it again for
+                                at least 6 months.
+                            </p>
+                            <div class="card__author-date">
+                                <div class="card__avatar"><img src="img/news/avatars/author1.jpg" alt="Author avatar" class="card__author-imgage"></div>
+                                <div class="card__name-date">
+                                    <p class="card__author-name">Isaac Dunn</p>
+                                    <p class="card__date">09 Feb 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="galery" id="galery">
+            <div class="container">
+                <h3 class="galery__header title"></h3>
+                <ul class="galery__galery photo-galery"></ul>
+                <a href="" class="galery__btn btn">see more</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
