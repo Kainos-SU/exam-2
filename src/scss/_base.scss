@@ -4,6 +4,12 @@
     margin: 0 auto;
 }
 
+.footer-container {
+    max-width: 770px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .title {
     text-transform: uppercase;
     font-family: "GothamBold", sans-serif;
@@ -42,6 +48,7 @@
     font-weight: 600;
     text-align: center;
     transition: box-shadow 0.25s, color 0.2s, background-color 0.2s;
+    cursor: pointer;
     
     &:hover {
         background-color: $text-dark-blue;

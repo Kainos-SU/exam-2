@@ -1,0 +1,35 @@
+.footer {
+    background: rgb(62,128,212);
+    background: linear-gradient(45deg, rgba(62,128,212,1) 0%, rgba(36,204,250,1) 100%);
+    padding: 295px 0 210px;
+    color: #fff;
+    font-family: "GothamBook";
+
+    &__wrapper {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    &__logo-icon {
+        fill: #fff;
+    }
+
+
+
+    &__socials {
+        flex: 0 1 160px;
+    }
+
+    &__copiright {
+        font-size: 14 / 16 * 1rem;
+        vertical-align: middle;
+    }
+
+    &__pipeline {
+        font-size: 20px;
+        margin: 0 20px;
+    }
+}

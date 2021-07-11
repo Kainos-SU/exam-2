@@ -1,0 +1,84 @@
+.contacts {
+    color: $text-dark-blue;
+    font-family: "GothamBook";
+
+    &__map {
+        width: 100%;
+        height: 700px;
+    }
+
+    &__form {
+        position: relative;
+        z-index: 5;
+        padding: 60px 60px 80px;
+        background: 
+            url("../img/form-bg/background.jpg"),
+            #fff;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-top: -300px;
+        margin-bottom: -248px;
+
+        @media screen and (max-width: 860px) {
+            margin: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__contacts {
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    &__contact {
+        font-size: 18 / 16 * 1rem;
+        margin-bottom: 45px;
+
+        & a {
+            color: inherit;
+        }
+    }
+
+    &__icon {
+        display: inline;
+        height: 1em;
+        color: $local-purple;
+    }
+
+    &__inputs {
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    &__input {
+        color: $text-dark-blue;
+        width: 100%;
+        display: block;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid rgba($text-dark-blue, 0.6);
+        font-size: 18 / 16 * 1rem;
+        padding: 20 / 16 * 1rem 0;
+        transition: border-color 0.25s;
+        margin-bottom: 30px;
+        
+
+        &:focus,
+        &:focus-visible {
+            border-color: $text-dark-blue;
+        }
+    }
+
+    &__btn {
+        margin: 0 0 0 auto;
+    }
+}

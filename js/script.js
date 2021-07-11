@@ -11,7 +11,7 @@ $(".card__text-description").each((index, element)=>{
 });
 
 $(".horisontal-slider").slick({
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 4000,
     arrows: true,
     prevArrow: '<button type="button" class="horisontal-slider__prev icon"><span class=" icon__circle"><span class=" icon__arrow"></span></span></button>',
@@ -21,4 +21,26 @@ $(".horisontal-slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     dotsClass: "horisontal-slider__dots",
+});
+
+const map = new ol.Map({
+    target: 'map',
+    layers: [
+        new ol.layer.Tile({
+        source: new ol.source.OSM()
+        })
+    ],
+    view: new ol.View({
+        center: ol.proj.fromLonLat([-73.993286, 40.696011]),
+        zoom: 18
+    })
+});
+
+
+$("a.scroll-to").on("click", function(e){
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top
+    }, 800);
 });
