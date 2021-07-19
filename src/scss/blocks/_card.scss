@@ -31,7 +31,7 @@
 
     &__title {
         text-transform: uppercase;
-        font-family: "GothamBold";
+        font-family: "GothamBold", sans-serif;
         font-size: 22 / 16 * 1rem;
         line-height: 1.5em;
         color: $text-dark-blue;
@@ -40,7 +40,7 @@
 
     &__text-description {
         color: $text-darker-blue;
-        font-family: "Open Sans";
+        font-family: "Open Sans", sans-serif;
         font-size: 18 / 16 * 1rem;
         overflow: hidden;
         line-height: 1.5em;

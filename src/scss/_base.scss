@@ -2,6 +2,7 @@
     max-width: $container-width;
     width: 90%;
     margin: 0 auto;
+    display:grid;
 }
 
 .footer-container {
@@ -36,7 +37,7 @@
 .btn {
     display: block;
     width: 190 / 16 * 1rem;
-    font-family: "GothamBook";
+    font-family: "GothamBook", sans-serif;
     font-size: 14 / 16 * 1rem;
     padding: 1.25em 1em;
     color: inherit;
